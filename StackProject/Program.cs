@@ -21,6 +21,8 @@ namespace AlgorithmsDataStructures
 			string string2 = "(()()(())";
 			string string3 = "())(";
 			string string4 = "))((";
+			string string5 = "((())";
+
 
 			bool isBalance = IsBalanceBrackets(string1);
 			Console.WriteLine(string1 + " is balance = " + isBalance);
@@ -33,6 +35,9 @@ namespace AlgorithmsDataStructures
 
 			isBalance = IsBalanceBrackets(string4);
 			Console.WriteLine(string4 + " is balance = " + isBalance);
+
+			isBalance = IsBalanceBrackets(string5);
+			Console.WriteLine(string5 + " is balance = " + isBalance);
 
 			Console.WriteLine(new string('=', 50));
 
@@ -110,6 +115,8 @@ namespace AlgorithmsDataStructures
 				}
 			}
 
+			if (stack.Size() != 0)
+				result = false;
 
 			return result;
 		}
