@@ -92,6 +92,7 @@ namespace AlgorithmsDataStructures
 			Console.WriteLine("pop result = " + result);
 		}
 
+		//задание 4
 		static bool IsBalanceBrackets(string row)
 		{
 			Stack<char> stack = new Stack<char>();
@@ -113,6 +114,7 @@ namespace AlgorithmsDataStructures
 			return result;
 		}
 
+		//задание 5
 		static int ComputePostfixExpression(string expression)
 		{
 			Stack<string> stack1 = new Stack<string>();
